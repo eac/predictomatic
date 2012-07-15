@@ -1,0 +1,5 @@
+1 1.0 'gmail| ---------- Forwarded message ---------- |L1 FromX Walt Whitman <walt@example.com> |L2 DateX Tue, Dec 22, 2009 at 10X19X07 AM |L3 SubjectX Thoughts? |L4 ToX buddha@example.com
+1 1.0 'gmail_line_break| ---------- Forwarded message ---------- |L1 FromX Ted B. asdfasdfasdfasdfaasdfasdfadsfadsfadsfadsfadsfadsf |L2 aqefwqewqef <ted@example.com> |L3 DateX Thu, Feb 23, 2012 at 9X47 AM |L4 SubjectX Help test agent fwd |L5 ToX person@example.com
+1 1.0 'gmail_line_break_1| FromX jeff@example.com |L1 DateX Thu, Mar 8, 2012 at 6X37 PM |L2 SubjectX Company Example.com Emails |L3 ToX "Example Company Name, Inc." < |L4 lewis@examplewebdesign.example.com>
+1 1.0 'gmail_lb2| ---------- Forwarded message ---------- |L1 FromX Example Online Store < |L2 sales@onlinestore.example.com> |L3 DateX Tue, Feb 21, 2012 at 7X31 AM |L4 SubjectX order emails |L5 ToX lewis@affordable.example.com
+0 1.0 'greedy| A bunch of words before the actual forward. |L1 ---------- Forwarded message ---------- |L2 FromX Example Online Store < |L3 sales@onlinestore.example.com> |L4 DateX Tue, Feb 21, 2012 at 7X31 AM |L5 SubjectX order emails |L6 ToX lew@affordable.example.com

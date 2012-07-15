@@ -1,0 +1,41 @@
+---
+- :label: :gmail
+  :features: |
+    ---------- Forwarded message ----------
+    From: Walt Whitman <walt@example.com>
+    Date: Tue, Dec 22, 2009 at 10:19:07 AM
+    Subject: Thoughts?
+    To: buddha@example.com
+- :label: :gmail_line_break
+  :features: |
+    ---------- Forwarded message ----------
+    From: Ted B. asdfasdfasdfasdfaasdfasdfadsfadsfadsfadsfadsfadsf
+    aqefwqewqef <ted@example.com>
+    Date: Thu, Feb 23, 2012 at 9:47 AM
+    Subject: Help test agent fwd
+    To: person@example.com
+- :label: :gmail_line_break_1
+  :features: |
+    From: jeff@example.com
+    Date: Thu, Mar 8, 2012 at 6:37 PM
+    Subject: Company Example.com Emails
+    To: "Example Company Name, Inc." <
+    lewis@examplewebdesign.example.com>
+- :label: :gmail_lb2
+  :features: |
+    ---------- Forwarded message ----------
+    From: Example Online Store <
+    sales@onlinestore.example.com>
+    Date: Tue, Feb 21, 2012 at 7:31 AM
+    Subject: order emails
+    To: lewis@affordable.example.com
+- :score: 0
+  :label: :greedy
+  :features: |
+    A bunch of words before the actual forward.
+    ---------- Forwarded message ----------
+    From: Example Online Store <
+    sales@onlinestore.example.com>
+    Date: Tue, Feb 21, 2012 at 7:31 AM
+    Subject: order emails
+    To: lew@affordable.example.com

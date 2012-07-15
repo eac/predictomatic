@@ -1,0 +1,3 @@
+1 1.0 'yes| ---------- Forwarded message ---------- |L1 FromX Eric Chapweske <eac@example.com> |L2 DateX Tue, Oct 19, 2012 at 3X45 AM |L3 SubjectX what is up |L4 ToX somebody@somewherelse.example.com
+1 1.0 'no| I received a Forwarded Message ---------- it was FromX somebody@somewhere.example.com and sent ToX me.
+1 1.0 'no_too_much| Can you take a look? Thanks. |L1 ---------- Forwarded message ---------- |L2 FromX Eric Chapweske <eac@example.com> |L3 DateX Tue, Oct 19, 2012 at 3X45 AM |L4 SubjectX what is up |L5 ToX somebody@somewherelse.example.com
