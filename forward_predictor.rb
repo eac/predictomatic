@@ -1,5 +1,7 @@
-require './predictomatic'
+$: << File.expand_path("lib")
+require 'predictomatic'
 require 'yaml'
+require 'benchmark'
 
 module Predictomatic
 
@@ -37,7 +39,6 @@ To: somebody@somewherelse.example.com'
   question = Predictomatic::Question.new(model.name, questions)
   question.save
 
-  require 'benchmark'
   timing = Benchmark.realtime { model.answer(question) }
 
   puts "Predicted in #{timing} seconds"
