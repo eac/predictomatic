@@ -1,13 +1,9 @@
 module Predictomatic
+
+  # Generates and persists a model based on the given examples
   class Model
 
     attr_accessor :examples, :name
-
-    def answer(question)
-      command = "vw -i #{filename} -t #{question.filename} -p /dev/stdout --quiet"
-      puts command
-      system(command)
-    end
 
     def save
       # Seems like VW uses old cache files when regenerating models

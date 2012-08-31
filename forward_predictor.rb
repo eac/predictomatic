@@ -5,8 +5,6 @@ require 'benchmark'
 
 module Predictomatic
 
-training_examples = YAML.load_file('forwards.yml').map { |forward| Example.new(forward) }
-
 questions = [
   Example.new(
     :label    => :yes,
@@ -31,15 +29,15 @@ To: somebody@somewherelse.example.com'
   )
 ]
 
-  model          = Predictomatic::Model.new
-  model.examples = training_examples
-  model.name     = 'forward'
+  training_examples = YAML.load_file('forwards.yml').map { |forward| Example.new(forward) }
+  model             = Predictomatic::Model.new
+  model.examples    = training_examples
+  model.name        = 'forward'
   model.save
 
   question = Predictomatic::Question.new(model.name, questions)
-  question.save
 
-  timing = Benchmark.realtime { model.answer(question) }
+  timing = Benchmark.realtime { puts question.answer(model) }
 
   puts "Predicted in #{timing} seconds"
 end

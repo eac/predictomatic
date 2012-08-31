@@ -1,4 +1,6 @@
 module Predictomatic
+
+  # Converts a block of text into VW's feature format
   class Paragraph
 
     attr_reader :text
