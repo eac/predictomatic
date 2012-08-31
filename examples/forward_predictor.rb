@@ -8,9 +8,8 @@ module Predictomatic
 
     def predict
       build_model
-      question = Question.new(questions)
-      timing   = Benchmark.realtime do
-        puts question.answer(model)
+      timing = Benchmark.realtime do
+        puts model.predict(questions)
       end
 
       puts "Predicted in #{timing} seconds"

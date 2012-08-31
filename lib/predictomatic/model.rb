@@ -5,6 +5,17 @@ module Predictomatic
 
     attr_accessor :examples, :name
 
+    def predict(examples)
+      command = "vw -i #{filename} -t /dev/stdin -p /dev/stdout --quiet"
+      puts command
+
+      IO.popen(command, 'w+') do |io|
+        io.puts(examples.join("\n"))
+        io.close_write
+        io.read
+      end
+    end
+
     def save
       # Seems like VW uses old cache files when regenerating models
       `rm #{cache_filename}` if File.exist?(cache_filename)
