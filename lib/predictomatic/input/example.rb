@@ -1,4 +1,4 @@
-module Predictomatic
+module Predictomatic::Input
   # Supports named and anonymous features.
   # named       = Example.new(:features => { :price => '.53', :sqft => '.19', :age => '.30', 1954 => nil })
   # anonymous   = Example.new(:features => [ 'a', 'bunch', 'of', 'words' ])

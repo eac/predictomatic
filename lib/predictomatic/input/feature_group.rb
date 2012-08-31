@@ -1,4 +1,4 @@
-module Predictomatic
+module Predictomatic::Input
   class FeatureGroup
 
     attr_accessor :namespace, :features

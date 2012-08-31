@@ -1,4 +1,4 @@
-module Predictomatic
+module Predictomatic::Input
 
   # Converts a block of text into VW's feature format
   class Paragraph

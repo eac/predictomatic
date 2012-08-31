@@ -1,8 +1,5 @@
 module Predictomatic
-  autoload :Example,      'predictomatic/example'
-  autoload :Feature,      'predictomatic/feature'
-  autoload :FeatureGroup, 'predictomatic/feature_group'
-  autoload :Model,        'predictomatic/model'
-  autoload :Paragraph,    'predictomatic/paragraph'
-  autoload :Question,     'predictomatic/question'
+  autoload :Input,    'predictomatic/input'
+  autoload :Model,    'predictomatic/model'
+  autoload :Question, 'predictomatic/question'
 end

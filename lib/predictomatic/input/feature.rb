@@ -1,4 +1,4 @@
-module Predictomatic
+module Predictomatic::Input
   class Feature
 
     attr_reader :name, :value
