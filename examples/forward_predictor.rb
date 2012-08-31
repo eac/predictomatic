@@ -9,7 +9,7 @@ module Predictomatic
     def predict
       build_model
       timing = Benchmark.realtime do
-        puts model.predict(questions)
+        puts model.predict(questions).inspect
       end
 
       puts "Predicted in #{timing} seconds"

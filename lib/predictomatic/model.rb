@@ -9,10 +9,15 @@ module Predictomatic
       command = "vw -i #{filename} -t /dev/stdin -p /dev/stdout --quiet"
       puts command
 
-      IO.popen(command, 'w+') do |io|
+      results = IO.popen(command, 'w+') do |io|
         io.puts(examples.join("\n"))
         io.close_write
         io.read
+      end
+
+      results.split("\n").map! do |result|
+        value, label = result.split
+        { :label => label, :value => value.to_f }
       end
     end
 
