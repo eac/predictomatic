@@ -3,10 +3,9 @@ module Predictomatic
   # Predicts an answer for the question using the given model
   class Question
 
-    attr_reader :name, :examples
+    attr_reader :examples
 
-    def initialize(name, examples)
-      @name     = name
+    def initialize(examples)
       @examples = examples
     end
 
