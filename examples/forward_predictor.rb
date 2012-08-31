@@ -1,4 +1,4 @@
-$: << File.expand_path("lib")
+$: << File.expand_path("../lib")
 require 'predictomatic'
 require 'yaml'
 require 'benchmark'
