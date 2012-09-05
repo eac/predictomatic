@@ -16,13 +16,16 @@ module Predictomatic
     end
 
     def model
-      @model ||= Model.new.tap { |model| model.name = 'forward' }
+      @model ||= Model.new.tap do |model|
+        model.verbose = true
+        model.path    = 'data'
+        model.name    = 'forward'
+      end
     end
 
     def build_model
       training_examples = YAML.load_file('forwards.yml').map { |forward| Input::Example.new(forward) }
-      model.examples    = training_examples
-      model.save
+      model.train(training_examples)
     end
 
     def questions

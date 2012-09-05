@@ -9,11 +9,15 @@ module Predictomatic::Input
     end
 
     def to_s
-      [ escaped_name, value ].compact.join(':')
+      pair = [ escaped_name, value ]
+      pair.compact!
+      pair.join(':')
     end
 
     def escaped_name
-      name.to_s.gsub(':', 'X')
+      escaped = name.to_s
+      escaped.gsub!(':', 'X')
+      escaped
     end
 
   end
