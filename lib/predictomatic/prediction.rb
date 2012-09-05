@@ -4,7 +4,7 @@ module Predictomatic
   class Prediction
 
     attr_reader   :timing
-    attr_accessor :examples, :model, :options, :verbose
+    attr_accessor :examples, :model_filename, :options, :verbose
 
     def initialize(examples, options)
       @examples = examples
@@ -39,7 +39,7 @@ module Predictomatic
     end
 
     def default_options
-      { :initial_regressor => model.filename, :testonly => true, :predictions => '/dev/stdout', :quiet => true }
+      { :initial_regressor => model_filename, :testonly => true, :predictions => '/dev/stdout', :quiet => true }
     end
 
   end

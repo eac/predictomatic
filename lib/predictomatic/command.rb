@@ -13,7 +13,9 @@ module Predictomatic
     end
 
     def popen
-      IO.popen(to_s, 'w+') do |io|
+      command = to_s
+      puts command if verbose
+      IO.popen(command, 'w+') do |io|
         yield io
         io.close_write
         io.read
